@@ -26,11 +26,12 @@ body::before {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     min-height: 50vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
     border-radius: 24px;
     border: 2px solid #5d3b7d;
     box-shadow: 4px 4px 20px 0px rgba(196, 70, 168, 0.377);
@@ -40,25 +41,28 @@ body::before {
     overflow: hidden;
     background-color: #9578af79;
     opacity: 70%;
+    padding: 1rem;
 }
 
 .container__conteudo {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    position: relative;
     width: 100%;
     background-color: #3a068345;
 }
 
 .container__informacoes {
     flex: 1;
-    padding: 3rem;
+    padding: 1rem;
+    width: 100%;
 }
 
 .container__texto {
     margin: 12px 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .container__texto-azul {
@@ -71,17 +75,19 @@ body::before {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 12px;
+    width: 100%;
 }
 
 .container__input {
-    width: 130px;
-    height: 72px;
+    width: 100%;
+    max-width: 250px;
+    height: 50px;
     border-radius: 16px;
     background-color: #FFF;
     border: none;
     color: #b890dd;
-    padding: 2rem;
-    font-size: 24px;
+    padding: 1rem;
+    font-size: 16px;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
 }
@@ -95,8 +101,8 @@ body::before {
 .container__botao {
     border-radius: 16px;
     background: #23e818;
-    padding: 16px 24px;
-    font-size: 24px;
+    padding: 12px 20px;
+    font-size: 18px;
     width: 100%;
     font-weight: 700;
     border: none;
@@ -106,8 +112,8 @@ body::before {
 .container__botao-desabilitado {
     border-radius: 16px;
     background: #6f6f70;
-    padding: 16px 24px;
-    font-size: 24px;
+    padding: 12px 20px;
+    font-size: 18px;
     width: 100%;
     font-weight: 700;
     border: none;
@@ -121,18 +127,17 @@ body::before {
 
 h1 {
     font-family: "TESTE";
-    font-size: 72px;
+    font-size: 48px;
     font-style: normal;
     font-weight: 700;
     line-height: 100%;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .texto__paragrafo {
     color: #FFF;
     font-family: 'Arial';
-    font-size: 32px;
-    font-style: normal;
+    font-size: 24px;
     font-weight: 400;
     line-height: normal;
 }
@@ -147,20 +152,26 @@ button:disabled {
     background-color: gray;
 }
 
-@media screen and (max-width: 1250px) {
-    .container__imagem-pessoa {
-        display: none;
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
     }
 
     h1 {
-        font-size: 50px;
+        font-size: 36px;
+    }
+
+    .container__botao {
+        font-size: 14px;
+        padding: 10px 18px;
     }
 
     .container__input {
-        width: 100px;
+        font-size: 14px;
+        height: 45px;
     }
 
-    .container__botoes {
-        flex-direction: column;
+    .texto__paragrafo {
+        font-size: 18px;
     }
 }
