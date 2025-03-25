@@ -27,7 +27,6 @@ body::before {
 
 .container {
     width: 80%;
-    max-width: 1200px; /* Limite máximo de largura para desktop */
     min-height: 50vh;
     display: flex;
     align-items: center;
@@ -48,7 +47,7 @@ body::before {
     align-items: center;
     position: relative;
     width: 100%;
-    background-color: #3a068345
+    background-color: #3a068345;
 }
 
 .container__informacoes {
@@ -60,6 +59,11 @@ body::before {
     margin: 12px 0;
     display: flex;
     flex-direction: column;
+}
+
+.container__texto-azul {
+    color: #74eb45;
+    display: block;
 }
 
 .container__campo {
@@ -145,7 +149,9 @@ button:disabled {
 
 @media screen and (max-width: 1250px) {
     .container__imagem-pessoa {
-        display: none;
+        display: block;
+        max-width: 100%;
+        height: auto;
     }
 
     h1 {
