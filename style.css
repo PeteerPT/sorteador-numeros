@@ -47,7 +47,7 @@ body::before {
     align-items: center;
     position: relative;
     width: 100%;
-    background-color: #3a068345
+    background-color: #3a068345;
 }
 
 .container__informacoes {
@@ -64,7 +64,6 @@ body::before {
 .container__texto-azul {
     color: #74eb45;
     display: block;
-
 }
 
 .container__campo {
@@ -127,7 +126,6 @@ h1 {
     font-weight: 700;
     line-height: 100%;
     padding: 2rem;
-
 }
 
 .texto__paragrafo {
@@ -156,5 +154,13 @@ button:disabled {
 
     h1 {
         font-size: 50px;
+    }
+
+    .container__input {
+        width: 100px;
+    }
+
+    .container__botoes {
+        flex-direction: column;
     }
 }
