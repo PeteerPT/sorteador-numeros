@@ -48,6 +48,9 @@ body::before {
     position: relative;
     width: 100%;
     background-color: #3a068345;
+    flex-direction: row;
+    margin: auto;
+    padding: 80px;
 }
 
 .container__informacoes {
@@ -59,11 +62,6 @@ body::before {
     margin: 12px 0;
     display: flex;
     flex-direction: column;
-}
-
-.container__texto-azul {
-    color: #74eb45;
-    display: block;
 }
 
 .container__campo {
@@ -126,6 +124,7 @@ h1 {
     font-weight: 700;
     line-height: 100%;
     padding: 2rem;
+    color: #2feb17
 }
 
 .texto__paragrafo {
@@ -174,6 +173,20 @@ button:disabled {
 
     .texto__paragrafo {
         font-size: 24px;
+    }
+
+    .container__conteudo {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .container__informacoes {
+        padding: 1rem;
+    }
+
+    .container__imagem-pessoa {
+        margin-top: 0; 
+        margin-bottom: 1rem; 
     }
 }
 
